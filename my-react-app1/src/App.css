@@ -1,0 +1,9 @@
+h1{
+    font-size: 50px;
+}
+.underLineColor{
+    border-bottom: 3px double blue;
+    width:350px;
+    text-align:center;
+    color:rgb(0, 0, 0);
+}

@@ -1,62 +1,86 @@
 
 function App() {
-  /* 建立物件變數 */
-  // const person = {
-  //   s1: {
-  //     name: "楊沅承",
-  //     age: 221,
-  //   },
-  //   s2: {
-  //     name: "又是楊沅承",
-  //     age: 222,
-  //   },
-  //   s3: {
-  //     name: "還是楊沅承",
-  //     age: 223,
-  //   }
-  // }
-
-  {/* 多筆資料的物件解構寫法1：一般寫法 */ }
-  // const { s1, s2, s3 } = person;
-
-  /* 多筆資料的物件解構寫法2：解構+展開...(旗魚運算子) */
-  /* 解構s1，展開s2,s3 */
-  // const { s1, ...other } = person;
-  // console.log(s1);
-  // console.log(other.s3);
-
-  const person = {
-    name: "楊沅承",
-    age: 22,
-  }
-
-  // function showName(obj) {
-  //   console.log(obj);
-  //   console.log(obj.name);
-  //   console.log(obj.age);
-  // }
-
-  /* 將物件屬性直接解構給函式參數 */
-  function showName({ name, age }) {
-    console.log(name);
-    console.log(age);
-  }
-  showName(person);
 
   return (
     <>
-      {/* <div>{`同學1姓名：${s1.name}`}</div>
-      <div>{`同學2姓名：${other.s2.name}`}</div>
-      <div>{`同學3姓名：${other.s3.name}`}</div> */}
+      {/* <!-- 頁首區 --> */}
+      <header>
+        <img src="./images/banner.jpg" alt="" />
+      </header>
 
-      {/* <div>第一位同學姓名:{a1.name}</div>
-      <div>第一位同學年齡:{a1.age}</div>
-      <hr />
-      <div>第二位同學姓名:{a2.name}</div>
-      <div>第二位同學年齡:{a2.age}</div>
-      <hr />
-      <div>第三位同學姓名:{a3.name}</div>
-      <div>第三位同學年齡:{a3.age}</div> */}
+      {/* <!-- 內容區 --> */}
+      <main>
+        <section className="top">
+          <div className="box">
+            <h2><strong>教學影音</strong></h2>
+            <p>透過影音課程，來了解軟體的核心概念以及入門，並跟著範例練習以了解其中之應用方式</p>
+          </div>
+          <div className="box">
+            <h2>良性互動</h2>
+            <p>學習過程中，若您遇到任何問題或是你有任何想法都歡迎提出，我們會盡量的協助問題的解決</p>
+          </div>
+          <div className="box">
+            <h2>趨勢分享</h2>
+            <p>分享目前時下所流行之趨勢，讓各位可隨時掌握新趨勢的發展</p>
+          </div>
+
+        </section>
+
+        {/* 主標 */}
+        <section className="middle">
+          <h2>讓學習成為一種習慣</h2>
+        </section>
+
+
+
+        <section className="bottom">
+          <h1 className="class">推薦課程</h1>
+          <div className="box">
+            <div className="box1">
+              <figure><img src="./images/unity.jpg" alt="" /></figure>
+              <h3>Unity 5</h3>
+              <p className="text">透過這個課程，學習如何使用 Unity 5 進行 2D 遊戲的開發</p>
+              <p>講師：XXX</p>
+              <p>影音課程時數：X小時</p>
+              <p></p>
+              <p><span className="span1">原價：NT$1600</span><span className="span2">NT$1200</span></p>
+              <button>付款上課去</button>
+
+            </div>
+
+            <div className="box1">
+              <figure><img src="./images/gamesalad.jpg" alt="" /></figure>
+              <h3>GameSalad 2D遊戲製作</h3>
+              <p className="text">視覺化操作，2D遊戲快速開發，不會寫程式的你一樣可以寫遊戲</p>
+              <p>講師：XXX</p>
+              <p>影音課程時數：X小時</p>
+              <p></p>
+              <p><span className="span1">原價：NT$1600</span><span className="span2">NT$1200</span></p>
+              <button>付款上課去</button>
+
+            </div>
+
+            <div className="box1">
+              <figure><img src="./images/gwd.jpg" alt="" /></figure>
+              <h3>Google Web Design</h3>
+              <p className="text">用於建立HTML5廣告動畫，透過時間軸將各種物件和事件以動畫方式呈現</p>
+              <p>講師：XXX</p>
+              <p>影音課程時數：X小時</p>
+              <p></p>
+              <p><span className="span1">原價：NT$1600</span><span className="span2">NT$1200</span></p>
+              <button>付款上課去</button>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+
+      {/* <!-- 頁尾區 --> */}
+      <footer>
+        <p>&copy;版權所有 2024.11.12 馬志豪</p>
+      </footer>
     </>
   )
 }

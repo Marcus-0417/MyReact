@@ -31,8 +31,6 @@ function App() {
           <h2>讓學習成為一種習慣</h2>
         </section>
 
-
-
         <section className="bottom">
           <h1 className="class">推薦課程</h1>
           <div className="box">

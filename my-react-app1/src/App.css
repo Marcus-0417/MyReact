@@ -45,7 +45,7 @@ main {
 }
 
 .class {
-    line-height: 100px;
+    padding-top: 50px;
     text-align: center;
     color: limegreen
 }
@@ -99,7 +99,7 @@ button {
     color: white;
     width: 100%;
     line-height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 15px;
 }
 

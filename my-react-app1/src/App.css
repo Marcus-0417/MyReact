@@ -50,35 +50,36 @@ main {
     color: limegreen
 }
 
-.bottom .box {
+.bottom {
     width: 80%;
     margin: 50px auto;
     display: flex;
     justify-content: space-around;
+    
 }
 
-.bottom .box .box1 {
+.bottom .box1 {
     width: 300px;
     box-shadow: 0 0 10px #ccc;
     /* 陰影：水平 垂直 擴展 顏色 */
     padding: 15px;
 }
 
-.bottom .box .box1 img {
+.bottom .box1 img {
     width: 100%;
 }
 
-.bottom .box .box1 h3 {
+.bottom .box1 h3 {
     font-size: 20px;
 }
 
-.bottom .box .box1 .text {
+.bottom .box1 .text {
     line-height: 1.2;
     color: #0040e1;
     margin: 10px 0;
 }
 
-.bottom .box .box1 p {
+.bottom .box1 p {
     color: #828282;
 }
 

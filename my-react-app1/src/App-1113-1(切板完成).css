@@ -1,0 +1,113 @@
+* {
+    /* 全域標籤(全部的標籤) */
+    box-sizing: border-box;
+    /* 不累加邊框與內距 */
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    clear: both;
+}
+
+.top {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top .box {
+    width: 300px;
+    text-align: center;
+}
+
+.top h2 {
+    color: red;
+}
+
+.top p {
+    line-height: 1.5;
+    color: #888
+}
+
+.middle {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: red;
+    line-height: 50px;
+}
+
+.class {
+    padding-top: 50px;
+    text-align: center;
+    color: limegreen
+}
+
+.bottom {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.bottom .box1 {
+    width: 300px;
+    box-shadow: 0 0 10px #ccc;
+    /* 陰影：水平 垂直 擴展 顏色 */
+    padding: 15px;
+}
+
+.bottom .box1 img {
+    width: 100%;
+}
+
+.bottom .box1 h3 {
+    font-size: 20px;
+}
+
+.bottom .box1 .text {
+    line-height: 1.2;
+    color: #0040e1;
+    margin: 10px 0;
+}
+
+.bottom .box1 p {
+    color: #828282;
+}
+
+.span1 {
+    text-decoration: line-through;
+    color: black;
+}
+
+.span2 {
+    color: red;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100%;
+    line-height: 40px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+}

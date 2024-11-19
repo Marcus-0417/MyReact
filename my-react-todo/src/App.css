@@ -64,3 +64,9 @@ body {
   border-radius: 5px;
   user-select: none;
 }
+
+/* 點擊todo內容的變化：完成 */
+.completed{
+  opacity: 0.3;
+  text-decoration: line-through 2px red;
+}

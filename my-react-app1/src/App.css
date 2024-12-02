@@ -1,0 +1,39 @@
+#listBox {
+    display: flex;
+}
+
+#city {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.cityName {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    background-color: rgb(239, 239, 239);
+}
+
+h3,
+p {
+    display: flex;
+    justify-content: center;
+}
+
+#outer {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.time {
+    display: flex;
+    display-direction: column;
+}

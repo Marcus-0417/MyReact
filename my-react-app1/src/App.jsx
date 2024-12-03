@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const data = await axios.get('https://raw.githubusercontent.com/Marcus-0417/MyReact/refs/heads/main/F-C0032-001.json');
+      const data = await axios.get('');
       const {locations} = data.data.cwbopendata.dataset;
       console.log(locations);
     })

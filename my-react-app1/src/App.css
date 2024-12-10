@@ -26,3 +26,21 @@
     padding: 5px 0;
     border-bottom: 1px solid #ccc;
 }
+
+/* 分隔線 */
+.cssAnimation1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.cssAnimation1 img {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.imgScale img {
+    transform: scale(1.5);
+}

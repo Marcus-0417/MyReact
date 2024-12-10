@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            margin: auto;
+        }
+        .box{
+            width: 200px;
+            text-align: center;
+            /* border: 1px solid #000; */
+            margin: 2px;
+            background-color: skyblue;
+        }
+        .box img{
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box"><img src="./images/image-1.jpg" alt=""><p>PHOTO-1</p></div>
+        <div class="box"><img src="./images/image-2.jpg" alt=""><p>PHOTO-2</p></div>
+        <div class="box"><img src="./images/05.jpg" alt=""><p>PHOTO-3</p></div>
+        <div class="box"><img src="./images/image-3.jpg" alt=""><p>PHOTO-4</p></div>
+        <div class="box"><img src="./images/07.jpg" alt=""><p>PHOTO-5</p></div>
+        <div class="box"><img src="./images/image-4.jpg" alt=""><p>PHOTO-6</p></div>
+        <div class="box"><img src="./images/03.jpg" alt=""><p>PHOTO-7</p></div>
+    </div>
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script>
+        $(function () {
+            $('#container').imagesLoaded(function(){
+                $('#container').masonry({
+                    /* 左右留白，頁面置中(需搭配最外層#container{margin:auto}) */
+                    isFitWidth: true
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

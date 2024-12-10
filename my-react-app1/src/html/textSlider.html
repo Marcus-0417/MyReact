@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/textslider.css">
+</head>
+
+<body>
+    <div class="slideText">
+        <ul> <!-- 速寫ul>li*10{News} -->
+            <li>News1</li>
+            <li>News2</li>
+            <li>News3</li>
+            <li>News4</li>
+            <li>News5</li>
+            <li>News6</li>
+            <li>News7</li>
+            <li>News8</li>
+            <li>News9</li>
+            <li>News10</li>
+        </ul>
+    </div>
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.textslider.js"></script>
+
+    <script>
+        $(function () {
+            $('.slideText').textslider({
+                direction: 'scrollDown', // 捲動方向: scrollUp向上, scrollDown向下
+                scrollNum: 10, // 一次捲動幾個<li>
+                scrollSpeed: 500, // 捲動速度(ms)
+                pause: 100,  // 停頓時間(ms)
+            });
+        });
+    </script>
+</body>
+
+</html>

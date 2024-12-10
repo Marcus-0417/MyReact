@@ -1,0 +1,29 @@
+.slideText {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 7.5em;
+}
+.slideText ul, .slideText li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+.slideText ul {
+    position: absolute;
+}
+.slideText li {
+    text-align: center;
+}
+.slideText li a {
+	display: block;
+	overflow: hidden;
+	font-size: 1em;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+.slideText li a:hover {
+    text-decoration: underline;
+}

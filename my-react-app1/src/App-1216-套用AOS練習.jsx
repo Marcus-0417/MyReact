@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+      <div id='scroll'>Scroll Down</div>
       <div className='container'>
         <div id='div1'>
           <h1 data-aos="fade-up">AOS-fade</h1>
@@ -41,6 +42,18 @@ function App() {
 }
 
 //CSS 的部分
+// #scroll{
+//   width: 100%;
+//   height: 100vh;
+//   background-color:aquamarine;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 100px;
+//   font-weight: bold;
+//   color: #fff;
+// }
+
 // .container{
 //   display: flex;
 //   flex-direction: column;

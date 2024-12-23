@@ -34,8 +34,9 @@ export default function App() {
   const nextSlide = () => {
     /* 取得前一張的索引編號，檢查是否為最後一個編號 */
     /* 是 => 回第一張 ， 否 => 跳下一張 */
-    setCurrentSlide((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+    setCurrentSlide((prevIndex) => (prevIndex=== slides.length - 1 ? 0 : prevIndex + 1));
   }
+
 
   return (
     <>

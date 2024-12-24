@@ -37,7 +37,6 @@ export default function App() {
     setCurrentSlide((prevIndex) => (prevIndex=== slides.length - 1 ? 0 : prevIndex + 1));
   }
 
-
   return (
     <>
       <div className="wrapper" style={{

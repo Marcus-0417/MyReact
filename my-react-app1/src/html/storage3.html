@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>localStorage應用</h2>
+    <hr>
+    <p>第<span id="count"></span>次造訪此網頁</p>
+    <script>
+        // let count = window.localStorage.getItem('count');
+        // if (count === null) {
+        //     count = 0;
+        // }
+        // count++;
+        // window.localStorage.setItem('count', count);
+        // document.getElementById('count').textContent = count;
+
+        // 進階版
+        if (localStorage.visit){
+            console.log('有visit');
+            /* console.log(localStorage.visit+1); */ // 這樣寫是錯的，因為localStorage.visit是字串
+            // console.log(localStorage.visit = parseInt(localStorage.visit) + 1);
+            localStorage.visit = parseInt(localStorage.visit) + 1;
+            document.getElementById('count').textContent = localStorage.visit;
+        }else{
+            console.log('沒有visit');
+            localStorage.visit = 0;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>取出storage1.html的變數</h1>
+    <hr>
+    <button id="btn1">清除指定storage變數</button>
+    <button id="btn2">清除全部storage變數</button>
+    <p id="showData"></p>
+    <script>
+        /* 取得單一變數 */
+        let name1 = window.localStorage.getItem('name1');
+
+        /* 取得全部變數 */
+        let varAll ='';
+        for (let i = 0; i < window.localStorage.length; i++) {
+            let key = window.localStorage.key(i);
+            let value = window.localStorage.getItem(key);
+            /* \n => 跳脫字元，要搭配innerText */
+            /* <br> => HTML元素，要搭配innerHTML */
+            /* 純文字內容 => 搭配textContent */
+            varAll += /* key + ':' + */ value + '\n';
+        }
+        /* 顯示varAll */
+        console.log(varAll);
+        document.getElementById('showData').innerText = varAll;
+
+        // 使用querySelector(.class或#id) => 只會取得指定類別的第一個
+        document.querySelector('#btn1').addEventListener('click', function () {
+            window.localStorage.removeItem('name1');
+            document.querySelector('#showData').textContent = '已清除' + name1;
+        });
+
+        document.querySelector('#btn2').addEventListener('click', function () {
+            window.localStorage.clear();
+            document.querySelector('#showData').textContent = '已全部清除';
+        });
+    </script>
+</body>
+
+</html>

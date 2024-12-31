@@ -25,7 +25,7 @@ export default function App() {
               return (
                 <tr key={props.id}>
                   <td style={{ borderBottom: "1px dashed #000", padding: "5px", width: "300px" }}>{props.title}</td>
-                  <td><img src={props.imgUrl} alt="" style={{ width: "100px", height: "70px", verticalAlign: "top" }}/></td>
+                  <td><img src={props.imgUrl} alt="" style={{ width: "100px", height: "70px" }}/></td>
                   <td style={{ borderBottom: "1px dashed #000", padding: "5px", width: "300px", textAlign: "right" }}>{props.price}</td>
                 </tr>
               )
